@@ -23,17 +23,18 @@ body {
 
 <body>
  <div class="login">
-	<h1>Predict Salary Analysis-By Guru.K</h1>
+	<h1>HR Module-Predictive Analysis (Salary)-By Guru.K</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="experience" placeholder="Experience" required="required" />
-        <input type="text" name="test_score" placeholder="Test Score" required="required" />
-		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+    	<input type="text" name="experience" placeholder="Experience(1-25 yrs)" required="required" />
+        <input type="text" name="test_score" placeholder="Test Score(1-10)" required="required" />
+		<input type="text" name="interview_score" placeholder="Interview Score(1-10)" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
+   <br>
    <br>
    <br>
    {{ prediction_text }}
