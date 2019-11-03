@@ -28,22 +28,25 @@ body {
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
 	<label>Enter Experience</label><br>
-    	<input type="text" name="experience" placeholder="Experience(1-25 yrs)" required="required" /><br><br>
-	<label>Enter Experience</label><br>
-        <input type="text" name="test_score" placeholder="Test Score(1-10)" required="required" /><br><br>
-<label>Enter Experience</label><br>
-		<input type="text" name="interview_score" placeholder="Interview Score(1-10)" required="required" /><br><br>
+    	<input type="text" name="experience" placeholder="(1-25 yrs)" required="required" /><br><br>
+	<label>Enter Test Score</label><br>
+        <input type="text" name="test_score" placeholder="(1-10)" required="required" /><br><br>
+<label>Enter Interview Score</label><br>
+		<input type="text" name="interview_score" placeholder="(1-10)" required="required" /><br><br>
 
-        <button type="submit" class="btns btn-primary btn-block btn-large">Predict</button>
+        <button style="font-size:17px; width: 97px; height: 27px;" type="submit" class="btns btn-primary btn-block btn-large">Predict</button>
+
+ 
+
     </form>
 
    <br>
    <br>
  <body>  
-<b><font size="6" color="blue">{{ prediction_text }}</font></b>
+	 <i><b><font size="6" color="blue">{{ prediction_text }}</font></b></i>
 </body>
 
-<br>
+
 <br>
 <br>
 
