@@ -4,23 +4,13 @@
 <head>
 <style>
 body {
-    -webkit-animation: colorchange 60s infinite; 
-    animation: colorchange 60s infinite;
+  background-image: url('E:\images.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 }
-@-webkit-keyframes colorchange {
-     0%  {background: #33FFF3;}
-    25%  {background: #78281F;}
-    50%  {background: #117A65;}
-    75%  {background: #DC7633;}
-    100% {background: #9B59B6;}
-}
-@keyframes colorchange {
-     0%  {background: #33FFF3;}
-    25%  {background: #78281F;}
-    50%  {background: #117A65;}
-    75%  {background: #DC7633;}
-    100% {background: #9B59B6;}
-}  
+
+  
 </style>
   <meta charset="UTF-8">
   <title>ML API</title>
@@ -33,7 +23,7 @@ body {
 
 <body>
  <div class="login">
-	<h1>Predict Salary Analysis-KKGRamya</h1>
+	<h1>Predict Salary Analysis-By Guru.K</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
@@ -49,6 +39,9 @@ body {
    {{ prediction_text }}
 
  </div>
+
+
+
 
 
 </body>
